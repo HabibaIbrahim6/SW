@@ -1,4 +1,5 @@
 package phase3;
+
 import java.util.List;
 
 public class User {
@@ -43,6 +44,8 @@ public class User {
             json.getString("phoneNumber")
         );
     }
+
+    // Business Logic Methods
     public static User submitSignUpForm(String username, String email, String phoneNumber, String password) {
         if (!email.contains("@") || !email.contains(".")) {
             throw new IllegalArgumentException("Invalid email format");

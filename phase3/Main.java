@@ -9,7 +9,7 @@ public class Main {
         System.out.println("2. Login");
         System.out.print("Choose an option: ");
         int choice = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
 
         if (choice == 1) {
             AuthenticationController.signUp();  

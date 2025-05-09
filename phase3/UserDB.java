@@ -15,7 +15,7 @@ public class UserDB {
             boolean firstEntry = true;
             if (Files.exists(Paths.get(FILE_PATH))) {
                 String existing = new String(Files.readAllBytes(Paths.get(FILE_PATH)));
-                if (existing.length() > 2) { // If not empty array
+                if (existing.length() > 2) { 
                     content.append(existing.substring(1, existing.length() - 1));
                     firstEntry = false;
                 }
